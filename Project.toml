@@ -3,6 +3,17 @@ uuid = "2f5b49ff-3f13-42d3-8cf2-b24571bd3800"
 authors = ["Filippo Vicentini <filippovicentini@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+DataFramesMeta = "1313f7d8-7da2-5740-9ea0-a2ca25f37964"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Measurements = "eff96d63-e80a-5855-80a2-b1b0885c5ab7"
+RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
+ValueHistories = "98cad3c8-aec3-5f06-8e41-884608649ab7"
+
 [compat]
 julia = "1"
 
