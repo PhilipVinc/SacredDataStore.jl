@@ -24,7 +24,9 @@ function sacred_load(depot_path)
 
         el_files = readdir(entry_path)
 
-        el_json = JSON3.read(read(joinpath(entry_path, "run.json"), String))
+        @info "loading entry $entry_path"
+        data = read(joinpath(entry_path, "run.json"), String)
+        el_json = JSON3.read(data)
         config_json = JSON3.read(read(joinpath(entry_path, "config.json"), String))
         experiment = el_json[:experiment]
 

@@ -25,7 +25,10 @@ function _lazyload(m::MetricsData, ::NetketJsonDataType)
                 push!(m.data, Symbol(k*"_rhat"), step, rhat)
                 push!(m.data, Symbol(k*"_tau"), step, taucorr)
             else
-                val = data
+                if data isa Integer
+                    data = convert(Float64, data)
+                end
+
                 push!(m.data, Symbol(k), step, data)
             end
         end
